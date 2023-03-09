@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: test
+  description: Deploys an Opensearch Cluster to AWS
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - terraform
+    - aws
+    - opensearch
+spec:
+  type: database
+  lifecycle: production
+  owner: devops
+  system: terraform-modules
